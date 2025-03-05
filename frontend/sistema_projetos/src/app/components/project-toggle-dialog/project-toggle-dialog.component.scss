@@ -1,0 +1,71 @@
+.dialog-container {
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+    h2[mat-dialog-title] {
+      margin: 0 0 12px;
+      font-weight: 500;
+      color: #2c3e50;
+      font-size: 1.3rem;
+      letter-spacing: -0.3px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+  
+    mat-dialog-content {
+      font-size: 0.95rem;
+      color: #505a68;
+      margin-bottom: 16px;
+      line-height: 1.4;
+      max-height: none;
+      padding: 0;
+      overflow: visible;
+    }
+  
+    // Container de ações/botões
+    mat-dialog-actions {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0;
+      margin: 0;
+      min-height: auto;
+  
+      button {
+        flex-shrink: 0;
+        min-width: 90px;
+        border-radius: 6px;
+        font-weight: 500;
+        padding: 6px 12px;
+        font-size: 0.875rem;
+        
+        &:first-child {
+          color: #64748b;
+          background: transparent;
+        }
+        
+        &[color="primary"] {
+          background-color: #ef4444;
+            color: #ffffff;
+        }
+        
+        &[color="warn"] {
+          background-color: #ef4444;
+        }
+      }
+    }
+  }
+  
+  // Ajustar container do diálogo 
+  ::ng-deep .mat-dialog-container {
+    padding: 0 !important;
+    overflow: hidden !important;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }

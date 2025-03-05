@@ -1,0 +1,82 @@
+/* project-form.component.scss */
+.project-form-container {
+  max-width: 900px;
+  margin: 0 auto;  // centraliza
+  padding: 24px;
+
+  h1 {
+    margin-bottom: 16px;
+  }
+}
+
+.project-card {
+  padding: 16px;
+
+  .project-form {
+    display: flex;
+    flex-direction: column;
+
+    .form-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+
+      .form-field {
+        flex: 1;
+      }
+    }
+
+    .blocks-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+
+      .block {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 16px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .block-title {
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+      }
+
+      .vigencia-box {
+        .date-row {
+          display: flex;
+          gap: 16px;
+        }
+
+        .date-field {
+          flex: 1;
+        }
+      }
+
+      .ativo-box {
+        width: 150px;
+
+        .radio-group {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 16px;
+
+    button {
+      min-width: 100px;
+    }
+  }
+}

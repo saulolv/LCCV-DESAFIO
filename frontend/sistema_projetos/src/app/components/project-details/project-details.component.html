@@ -1,0 +1,46 @@
+<h2 mat-dialog-title>Detalhes do Projeto</h2>
+
+<mat-dialog-content>
+  <div class="project-details-container">
+
+    <div class="detail-row">
+      <span class="detail-label">Projeto:</span>
+      <span class="detail-value">{{ data.projeto }}</span>
+    </div>
+
+    <div class="detail-row">
+      <span class="detail-label">Financiador:</span>
+      <span class="detail-value">{{ data.financiador }}</span>
+    </div>
+
+    <div class="detail-row">
+      <span class="detail-label">Área Tecnológica:</span>
+      <span class="detail-value">{{ data.area_tecnologica }}</span>
+    </div>
+
+    <div class="detail-row">
+      <span class="detail-label">Coordenador:</span>
+      <span class="detail-value">{{ data.coordenador }}</span>
+    </div>
+
+    <div class="detail-row">
+      <span class="detail-label">Vigência:</span>
+      <span class="detail-value">
+        Início: {{ data.inicio_vigencia }}<br>
+        Fim: {{ data.fim_vigencia }}
+      </span>
+    </div>
+
+    <div class="detail-row">
+      <span class="detail-label">Ativo:</span>
+      <span class="detail-value">{{ data.ativo ? 'Sim' : 'Não' }}</span>
+    </div>
+
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-stroked-button color="primary" (click)="closeDialog()">
+    Fechar
+  </button>
+</mat-dialog-actions>

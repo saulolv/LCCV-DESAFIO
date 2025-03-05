@@ -1,0 +1,54 @@
+/* project-details.component.scss */
+.project-details-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    .detail-row {
+      display: flex;
+      align-items: flex-start;
+      padding: 12px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      transition: background-color 0.2s;
+      
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.02);
+      }
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      .detail-label {
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.6);
+        width: 150px;
+        flex-shrink: 0;
+      }
+      
+      .detail-value {
+        flex: 1;
+        color: rgba(0, 0, 0, 0.87);
+        word-break: break-word;
+      }
+    }
+  }
+  
+  mat-dialog-title {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  mat-dialog-actions {
+    padding: 8px 0;
+    
+    button {
+      min-width: 100px;
+    }
+  }
