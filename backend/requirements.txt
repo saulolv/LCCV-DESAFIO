@@ -1,0 +1,5 @@
+Django==3.2.22
+djangorestframework==3.14.0
+psycopg2-binary==2.9.6
+drf-spectacular==0.26.5
+python-decouple==3.8
